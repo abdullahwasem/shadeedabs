@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+</head>
+
+<style>
+    .joinbutton {
+        background-color: orange;
+        font-family: monospace;
+        border-color: transparent;
+        font-size: 16px;
+        cursor: pointer;
+        position: absolute;
+        color: rgb(0, 0, 0);
+        width: max-content;
+        transition: background-color 0.15s;
+    }
+
+    .joinbutton:hover {
+        filter: brightness(85%);
+        border-radius: 4px;
+    }
+
+    .joinbutton:active {
+        filter: brightness(75%);
+    }
+
+    .exercisesbutton {
+        font-family: monospace;
+        color: white;
+        background-image: url(exercises.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-color: transparent;
+        font-size: 40px;
+        cursor: pointer;
+        transition: background-color 0.07s;
+        margin: 0;
+    }
+
+    .exercisesbutton:hover {
+        background-color: rgba(52, 52, 52, 0.432);
+        background-blend-mode: darken;
+    }
+
+    .exercisesbutton:active {
+        background-color: rgba(52, 52, 52, 0.559);
+        background-blend-mode: darken;
+    }
+
+
+    .dietplanbutton {
+        font-family: monospace;
+        text-align: center;
+        color: white;
+        background-image: url(https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGVhbHRoeSUyMGZvb2R8ZW58MHx8MHx8&w=1000&q=80);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-color: transparent;
+        font-size: 40px;
+        cursor: pointer;
+        transition: background-color 0.07s;
+        margin: 0;
+
+    }
+
+    .dietplanbutton:hover {
+        background-color: rgba(52, 52, 52, 0.432);
+        background-blend-mode: darken;
+    }
+
+    .dietplanbutton:active {
+        background-color: rgba(52, 52, 52, 0.559);
+        background-blend-mode: darken;
+    }
+
+    .random {
+        font-size: large;
+    }
+
+    .random:hover {
+        background-blend-mode: darken;
+    }
+
+    .shopbutton {
+        font-family: monospace;
+        text-align: middle;
+        color: white;
+        background-image: url("shop.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-color: transparent;
+        font-size: 40px;
+        cursor: pointer;
+        transition: background-color 0.07s;
+
+        margin: 0;
+
+    }
+
+    .shopbutton:hover {
+        background-color: rgba(52, 52, 52, 0.432);
+        background-blend-mode: darken;
+    }
+
+    .shopbutton:active {
+        background-color: rgba(52, 52, 52, 0.559);
+        background-blend-mode: darken;
+    }
+
+    .links:link {
+        color: rgb(0, 0, 0);
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    .links:visited {
+        color: rgb(0, 0, 0);
+        background-color: transparent;
+    }
+
+    .links:hover {
+        color: rgb(0, 0, 0);
+        background-color: transparent;
+    }
+
+    .links:active {
+        color: rgb(0, 0, 0);
+        background-color: transparent;
+    }
+
+    @media (min-width: 668px) {
+        html,
+        body {
+            background-color: #000;
+        }
+    }
+
+    @media (max-width: 667px) {
+        html,
+        body {
+            background-color: rgb(255, 255, 255);
+            font-size: smaller;
+        }
+    }
+
+    @media (max-width: 320px) {
+        html,
+        body {
+            background-color: #FFF;
+            font-size: smaller;
+        }
+    }
+
+    section.vh-45 {
+        background-color: #fff;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" style="font-weight: bold;">
+        <div class="container-fluid">
+            <a class="navbar-brand"
+                style="font-size: 32px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight: bold;"
+                href="shadeedabs1.html">shadeedabs</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
+                aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarID">
+                <div class="navbar-nav">
+                    <a class="nav-link active" style="margin:10px;" aria-current="page" href="#">Home</a>
+
+                    <a class="nav-link active" style="margin:10px;" aria-current="page" href="#">BMI Calculator</a>
+                    <a class="nav-link active" style="margin:10px;" aria-current="page" href="#">Premium Planning</a>
+                    <a class="nav-link active" style="margin:10px;" aria-current="page" href="about.html">About Us</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="margin:10px;" aria-current="page" href="#"
+                            data-bs-toggle="dropdown"> My Profile </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Edit Profile</a></li>
+                            <li><a class="dropdown-item" href="#">View Progress</a></li>
+                        </ul>
+                    </li>
+
+                    <a href="login.html">
+                        <button class=" btn btn-warning btn-sm" style="position:absolute; right:2%; top:30%;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight: bold;">Log
+                            In</button>
+                    </a>
+                    <a href="signupoptions.html">
+                        <button class=" btn btn-warning btn-sm" style="position:absolute; right:7%; top:30%;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight: bold;">Sign
+                            Up</button>
+                    </a>
+
+
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="weights.jpg" class="d-block w-100" style="width:900px; height:582px;" alt="...">
+                <div class="carousel-caption d-block d-md-block" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight: bold;">
+                    <h4>The best fitness center in Pakistan at your home. &nbsp <a href="signupoptions.html"><button
+                            class="joinbutton btn btn-warning btn-sm"> <b> Join Us Now! </b></button></a></h4>
+                </div>
+
+            </div>
+            <div class="carousel-item">
+                <img src="runman.png" class="d-block w-100" style="width:900px; height:582px;" alt="...">
+                <div class="carousel-caption d-block d-md-block" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight: bold;">
+                    <h4>Abdullah Washeemm Keshay Krletay Hoooo</h4>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="signuppic.jpeg" class="d-block w-100" style="width:900px; height:582px;" alt="...">
+                <div class="carousel-caption d-block d-md-block" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight: bold;">
+                    <h4>DON'T DO THIS (in huzaifa's voice)</h4>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <section class="vh-45">
+        <div class="container py-5 h-50">
+            <div class="row d-flex justify-content-center align-items-center h-50">
+                <div class="col col-lg-10 col-xl-8">
+
+                    <div class="card bg-dark text-white rounded-3 mb-3">
+                        <div class="card-body p-4 ">
+                            <figure class="mb-0">
+                                <blockquote class="blockquote" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight: bold;">
+                                    <p class="pb-2 ">
+                                        "Ek, do, teen, shuru ho jao abhi,
+                                        Kyunki fitness ke bagher hai zindagi lonely lonely."
+                                    </p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer mb-0 text-white" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight: bold;">
+                                    Jeffa Faalooq
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div>
+            <div class="row text-left g-0">
+                <div class="col-md">
+                    <a href="exercise.html">
+                        <button class="exercisesbutton" style="width:100%; height:250px;"> Exercises </button>
+                    </a>
+                </div>
+                <div class="col-md">
+                    <a href="dietplans.html">
+                        <button class="dietplanbutton" style="width:100%; height:250px;"> Diet Plans</button>
+                    </a>
+                </div>
+                <div class="col-md">
+                    <a href="shop.html">
+                        <button class="shopbutton" style="width:100%; height:250px;"> Shop </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
